@@ -1,14 +1,12 @@
+let numberOfKm = document.getElementById('km');
+let passengerAge = document.getElementById('age');
+
 const pricePerKm = 0.2762;
 const button = document.getElementById('button');
 
-let numberOfKm = document.getElementById('km');
-let passengerAge = document.getElementById('age');
-let ticketFull = numberOfKm.value * pricePerKm;
-
-let ticketMinor = ticketFull - (ticketFull * 0.175);
-let ticketSenior = ticketFull - (ticketFull * 0.333);
-
-
+let ticketFull
+let ticketMinor
+let ticketSenior
 
 button.addEventListener('click', function() {
   console.log(numberOfKm.value);
@@ -16,6 +14,14 @@ button.addEventListener('click', function() {
   console.log(ticketFull)
   console.log(ticketMinor)
   console.log(ticketSenior)
+
+  
+  ticketFull = numberOfKm.value * pricePerKm;
+  ticketMinor = ticketFull - (ticketFull * 0.175);
+  ticketSenior = ticketFull - (ticketFull * 0.333);
+  
+
+
 
   if (passengerAge.value < 18) {
     document.getElementById('totale').innerHTML = ticketMinor.toFixed(2) + "&euro;"

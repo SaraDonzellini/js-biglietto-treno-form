@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Biglietto treno + Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
     <main>
-      <label for="km">Numero di Chilometri</label>
-      <input type="number" name="km" id="km">
-      <label for="age">Età del/la passeggero/a</label>
-      <input type="number" name="age" id="age">
-      <a href="#" id="button">Conferma</a>
-      <p id="totale"></p>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-5">
+              <img src="img/logo-trenitalia.svg" alt="logo trenitalia" class="logo mt-4">
+              <h1 class="mb-4">Prezzo del biglietto</h1>
+              <form class="d-flex flex-column justify-content-center">
+                <div>
+                  <label for="km">Numero di Chilometri</label>
+                  <input type="number" name="km" id="km" class="mb-2" />
+                </div>
+                <div>
+                  <label for="age">Età del/la passeggero/a</label>
+                  <input type="number" name="age" id="age" class="mb-4" />
+                </div>
+              </form>
+              <button id="button" class="btn">CONFERMA</button>
+              <p id="totale"></p>
+            </div>
+            <div class="col-12 col-sm-5">
+              <div class="box d-flex justify-content-end">
+                <img src="img/pngegg(1).png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
 
-
+      </div>
     </main>
-
 
     <script src="js/script.js"></script>
   </body>

@@ -1,0 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#button {
+  border: none;
+  color: white;
+  background-color: tomato;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: all 1s ease-in-out;
+}
+
+#button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: red;
+}
+
+main img.logo{
+  width: 30%;
+}
+
+h1 {
+  color: #006a65;
+}
+
+div.wrapper {
+  background-color: #006a65;
+  height: 98vh;
+}
+
+.container {
+  background-color: white;
+  height: 98vh;
+}
