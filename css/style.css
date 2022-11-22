@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #button {
@@ -13,15 +13,24 @@ body {
 
 #button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: red;
+  background-color: #e31936;
 }
 
-main img.logo{
-  width: 30%;
+main img.logo {
+  width: 50%;
+}
+
+main img{
+  width: 100%;
+  margin-top: 5rem;
 }
 
 h1 {
   color: #006a65;
+}
+
+h2 {
+  color: #e31936;
 }
 
 div.wrapper {
@@ -32,4 +41,11 @@ div.wrapper {
 .container {
   background-color: white;
   height: 98vh;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  /* width: 100px; */
 }
